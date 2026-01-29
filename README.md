@@ -1,1 +1,1 @@
-# fun-puzzle-games.github.io
+# Number Guessing Game
