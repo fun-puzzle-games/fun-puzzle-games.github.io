@@ -1,0 +1,27 @@
+<HTML>
+  <Head>
+    <Title>Puzzle Games</Title>
+    <script>
+        let retry = 5;
+        const number = Math.floor(Math.random() * 10) + 1;
+
+      function guessNumber() {
+        retry--;
+        if(retry < 1){
+          alert("No more retries left!");
+          location.reload();
+        }
+        const guess = prompt("Enter a number between 1 and 10:");
+        if (parseInt(guess) === number) {
+          alert("Correct! The number is " + number);
+        } else {
+          alert("Wrong guess.Try again!!!");
+        }
+      }
+    </script>
+  </Head>
+  <Body>
+    San Always Rocks!!!
+    <button onclick="guessNumber()">Play Guess the Number</button>
+  </Body>
+</HTML>
